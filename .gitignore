@@ -1,0 +1,9 @@
+# Bower dependencies
+bower_components
+
+# Node dependencies
+node_modules
+
+# OS cache files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,65 @@
+.lst-top-menu {
+	background: #fff;
+	border-top: 5px solid #022c44;
+	border-bottom: 10px solid #ededed;
+	height: 150px;
+	padding: 32px 25px;
+
+	.lst-logo { display: inline-block; height: 65px; }
+
+	.lst-menu-button {
+		@media (min-width: 768px){
+			display: none;
+		}
+	}
+
+	.lst-items {
+		display: none;
+		float: right;
+		font-size: 18px;
+		font-weight: 700;
+		padding: 25px 0;
+	
+		@media screen and (min-width: 768px){
+			display: inline-block;
+		}
+	}
+	
+	.lst-items li {
+		color: #022c44;
+		display: inline-block;
+	
+		.transition(color .4s);
+	
+		&:not(:last-child) {
+			margin-right: 25px;
+		}
+	}
+	
+	.lst-items li:hover {
+		color: #33bebf;
+	}
+	
+	.lst-items li a {
+		cursor: pointer;
+		color: inherit;
+		text-decoration: inherit;
+	}
+
+	.lst-button {
+		height: 44px;
+		padding: 9px 5px;
+		width: 44px;
+	
+		@media screen and (min-width: 768px){
+			display: none;
+		}
+	
+		.lst-bar {
+			background: black;
+			height: 5px;
+			margin-bottom: 5px;
+			width: 100%;
+		}
+	}
+}

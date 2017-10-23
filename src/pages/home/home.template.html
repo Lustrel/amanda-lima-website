@@ -1,0 +1,243 @@
+<header id="top-menu" class="lst-top-menu" ng-controller="HeaderController as controller">
+	<div class="lst-content-container">
+		<img class="lst-logo" src="./dist/images/pedro-cellis-logo.png" />
+		<ul class="lst-items">
+			<li class="lst-item" ng-repeat="option in options">
+				<a ng-if="option.url" lst-scroll scroll-to="{{option.url}}" ng-bind="option.label"></a>
+				<a ng-if="option.callback" ng-bind="option.label" ng-click="option.callback()"></a>
+			</li>
+		</ul>
+
+		<lst-menu-button options="options"></lst-menu-button>
+	</div>
+</header>
+
+<section class="lst-slide-section">
+	<div class="lst-content-container">
+		<h2 class="lst-message">
+			Cansado de passar <span class="lst-featured">horas</span> <br/>
+			na academia e não ter <br/> 
+			<span class="lst-featured">resultados?</span>
+		</h2>
+	</div>
+</section>
+
+<section id="pedro-cellis" class="lst-biography-section">
+	<div class="lst-content-container">
+		<img class="lst-picture" src="src/images/pedro-cellis.jpg"/>
+		<div class="lst-content">
+			<h3 class="lst-title">Formado em Educação Física, pós graduado em Bases Fisiológicas do Treinamento Personalizado e Nutrição Esportiva.</h3>
+			<p>
+				Tenho como maior objetivo levar à você o que há de mais atualizado em treinamento, com base na ciência, 
+				visando fazer com que você tenha em mãos treinos inteligentes, efetivos e rápidos, gerando assiduidade 
+				e resultados. Não precisamos de altos volumes de treino e que podemos ter ótimos treinos e excelentes 
+				resultados em emagrecimento e hipertrofia treinando de 20 à 40 minutos dia, sem precisar treinar 6 vezes 
+				na semana.
+			</p>
+		</div>
+	</div>
+</section>
+
+<section id="treine-comigo" class="lst-consulting-section">
+	<div class="lst-content-container">
+		<h2 class="lst-title">A Consultoria</h2>
+		<p>
+			Seus treinos serão principalmente baseado em exercícios multiarticulares, com isso gerando um economia de tempo.
+		</p>
+		<p>
+			Os treinos serão aplicados de forma intensa. A intensidade engloba algumas variáveis como: intervalo de descanso, 
+			cadência, amplitude e carga, estes serão bem planejados e precisam estar em harmonia para que os resultados aconteçam.
+		</p>
+		<p>
+			O que traz resultados não é treinar muito, mas sim treinar certo.
+		</p>
+		<p>
+			Você irá preencher um formulário para que eu possa te conhecer melhor e entender seus 
+			objetivos e limitações.
+		</p>
+		<p>
+			Depois de ler e avaliar todo o seu histórico, montarei um treino dentro das tuas 
+			necessidades/possibilidades e que te proporcionem o melhor resultado possível.
+		</p>
+		<p>
+			Em seguida, você receberá esse treino via e-mail junto a um manual explicativo. Receberá 
+			também um contato de WhatsApp que permite um contato frequente (dias e horários comerciais). 
+			Por fim, passa a poder utilizar o e-mail duvidas@antonioarruda.com.br. A duração de cada programa 
+			de prescrição é de 30 dias.
+		</p>
+		<h4 class="lst-featured">Tá sem tempo? Cansado de treinos sem nenhuma base científica, sem coerência e eficiência?</h4>
+		<p>
+			Se eu te disser que você tem ótimos resultados treinando de 25 à 40 minutos por dia de 3 a 4 vezes 
+			na semana? Vem pro meu time!
+		</p>
+	</div>
+</section>
+
+<section id="planos" class="lst-prices-section">
+	<div class="lst-content-container">
+		<lst-price-box 
+			title="Consultoria mensal" 
+			price="100,00"
+			code="9192C953FEFE54177411DFA39A8F2919">
+			Recebimento de um programa personalizado de treinamento, válido pelo período de 01 mês.
+			Contato pessoal e direto via WhatsApp, onde tirarei todas suas dúvidas, inclusive através de vídeos enviados.
+		</lst-price-box>
+
+		<lst-price-box
+			featured="yes"
+			title="Consultoria trimestral"
+			price="270,00"
+			code="DC69680891911E1DD4323F835A88C9E3">
+			Recebimento de um programa personalizado de treinamento por mês, durante 3 meses.
+			Contato pessoal e direto via WhatsApp, onde tirarei todas suas dúvidas, inclusive através de vídeos enviados.
+		</lst-price-box>
+
+		<lst-price-box
+			title="Consultoria semestral"
+			price="500,00"
+			code="C6BEBEBF68680D4334792FAD4B8C73F2">
+			Recebimento de um programa personalizado de treinamento por mês, durante 6 meses.
+			Contato pessoal e direto via WhatsApp, onde tirarei todas suas dúvidas, inclusive através de vídeos enviados.
+		</lst-price-box>
+	</div>
+</section>
+
+<section class="lst-faq-section">
+	<div class="lst-content-container">
+		<h2 class="lst-title">Perguntas frequentes</h2>
+
+		<lst-accordion-item title="1. Alongamento deve ser realizado antes ou depois do treino?">
+			<p>
+				Geralmente recomendo que seja feito no pós treino, mas nada te impede de realizar
+				antes do treino...
+			</p>
+		</lst-accordion-item>
+
+		<lst-accordion-item title="2. Devo realizar a sessão de treino CARDIO e/ou HIIT antes ou após a musculação?">
+			<p>Sempre após a musculação.</p>
+		</lst-accordion-item>
+
+		<lst-accordion-item title="3. Como achar a minha carga de treino?">
+			<p>
+				A ideia será focar na quantidade de repetições estabelecidas e qual foi o número que
+				foi pedido que você FALHE no seu treino. Ajuste uma carga que permita você FALHAR
+				dentro do número pré-estabelecido de repetições. Dificilmente você irá achar na
+				primeira tentativa realizando a primeira vez o seu treino, por isso sugiro que anote a
+				carga após o treino. Dessa maneira a partir da segunda sessão de treino você será
+				capaz de treinar sem precisar “achar” a carga.
+			</p>
+		</lst-accordion-item>
+
+		<lst-accordion-item title="4. Quanto tempo de intervalo devo dar entre os exercícios?">
+			<p>
+				O mesmo tempo que está descrito no seu treino entre uma série e outra.
+			</p>
+		</lst-accordion-item>
+
+		<lst-accordion-item title="5. Devo realizar os abdominais antes ou depois da musculação?">
+			<p>
+				Sempre após o treino de musculação.
+			</p>
+		</lst-accordion-item>
+
+		<lst-accordion-item title='6. Se eu quiser dar uma caminhada ou pedalada num dia "livre" para relaxar a cabeça e me sentir bem, pode ser?'>
+			<p>
+				Sim! A ideia antes de qualquer coisa é que a pessoa se sinta bem consigo mesma, e a
+				sensação de bem estar após uma pedalada num parque ou corrida numa orla de praia
+				é tão boa e dificilmente irá atrapalhar de maneira significativa seus resultados.
+			</p>
+		</lst-accordion-item>
+
+		<lst-accordion-item title='7. Como aquecer para meu treino CARDIO/HIIT?'>
+			<p>
+				Pedale ou caminhe por aproximadamente 2 a 4 minutos em ritmo leve (onde sua
+				respiração fique levemente ofegante e você não se sinta fadigado) e constante.
+			</p>
+		</lst-accordion-item>
+
+		<lst-accordion-item title='8. Se eu estiver dolorido no dia de treinar, devo treinar mesmo assim?'>
+			<p>
+				Se essa dor for muito grande, daquele tipo que você diminui sua capacidade de realizar
+				esforços físicos não treine e descanse. No dia seguinte treine APENAS o treino que era
+				pra ter sido feito e foi adiado devido a dor muscular muito intensa.
+				Caso a dor seja bem leve, recomendo que faça um bom aquecimento e tente treinar
+				normalmente.
+			</p>
+		</lst-accordion-item>
+
+		<lst-accordion-item title='9. Se o treino não gerar dor, não foi bom?'>
+			<p>
+				Não existe nenhuma relação entre a dor e o sucesso do treino. Minha sugestão é focar
+				em tentar DAR SEMPRE O SEU MÁXIMO em cada série. Treinar como se cada série do
+				seu treino fosse sempre a última, portanto nunca “economizar” nada pra depois.
+			</p>
+		</lst-accordion-item>
+
+		<lst-accordion-item title='10. O que é cadência e como funciona?'>
+			<p>
+				A cadência é a velocidade de execução do exercício, ou seja, o tempo que se gasta para
+				realizar uma repetição. Por exemplo uma cadência 3030 no leg press, você tem 3
+				segundos na fase excêntrica para descer o peso, e 3 segundos na fase concêntrica
+				estender o joelho.
+			</p>
+		</lst-accordion-item>
+
+		<lst-accordion-item title='11. Como fazer aquecimento?'>
+			<p>
+				O aquecimento deve ser realizado sempre no primeiro exercício do seu treino. Deverá
+				realizar de 15 a 20 repetições com a carga leve, isso que chamo nas prescrições dos
+				meus treinos de aquecimento específico.
+			</p>
+		</lst-accordion-item>
+
+		<lst-accordion-item title='12. Quero fazer HIIT todo dia, posso?'>
+			<p>
+				Não.O HIIT é um treino intenso que tem como objetivo a queima de gordura no pós
+				exercício durante várias horas, devido a isso não devemos sobrepor treinos.
+			</p>
+		</lst-accordion-item>
+
+		<lst-accordion-item title='13. Em quantos dias recebo meu treino?'>
+			<p>
+				Depois que sua compra for processada e o pagamento for aprovado, você receberá um
+				questionário que deverá ser respondido e enviado de volta, depois disso você receberá
+				seu treino em até 3 dias utéis.
+			</p>
+		</lst-accordion-item>
+
+		<lst-accordion-item title='14. Como eu executarei os exercícios da maneira correta?'>
+			<p>
+				Como todos os clientes terão acesso direto comigo via WhatsApp, no momento que
+				envio a elaboração do treino, faço explicações mais detalhadas por áudio e vídeos
+				explicativos dos exercícios que serão realizados, se mesmo assim ainda existir dúvidas
+				peço para que me envie vídeos das suas execuções para que eu possa fazer a análise e
+				correções necessárias. Sempre terão contato direto comigo pelo WhatsApp em horário comercial.
+			</p>
+		</lst-accordion-item>
+	</div>
+</section>
+
+<section class="lst-social-section" ng-controller="SocialController">
+	<div class="lst-content-container">
+		<div class="lst-social-column">
+			<h4 class="lst-title">Instagram</h4>
+			<lst-insta-thumbs></lst-insta-thumbs>
+		</div>
+		<div class="lst-social-column">
+			<h4 class="lst-title">Newsletter</h4>
+			<p class="lst-hint">Cadastre-se na nossa newsletter e receba todas as novidades em primeira mão.</p>
+			<input type="email" class="lst-input" placeholder="meu-email@exemplo.com"/>
+			<a ng-show="!alreadySent" class="lst-send" ng-click="sendNewsletter()">Enviar</a>
+			<a ng-show="alreadySent" class="lst-send -positive">Cadastrado com sucesso</a>
+		</div>
+	</div>
+</section>
+
+<section class="lst-footer-section">
+	<div class="lst-content-container">
+		<img class="lst-logo" src="dist/images/igor-trindade-logo.png" />
+		<div class="lst-top" lst-scroll scroll-to="#top-menu">
+			<img src="dist/images/to-top.png"/>
+		</div>
+	</div>
+</section>

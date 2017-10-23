@@ -1,0 +1,198 @@
+
+.lst-slide-section {
+	.lst-content-section;
+	background: url(../images/pedro-cellis-banner.jpg) no-repeat;
+	background-size: cover;
+	background-position: right center;
+	height: 340px;
+	text-transform: uppercase;
+	padding: 70px 30px;
+
+	h2.lst-message {
+		color: white;
+		font-size: 35px;
+		font-weight: 700;
+
+		.lst-featured {
+			color: #d7df36;
+		}
+	}
+}
+
+.lst-biography-section {
+	.lst-content-section;
+	text-align: justify;
+
+	.lst-picture,
+	.lst-content {
+		display: inline-block;
+		vertical-align: top;
+		width: 45%;
+	}
+
+	.lst-picture {
+		border: 10px solid #bac4ca;
+		max-width: 450px; 
+		margin-right: 30px;
+	}
+
+	.lst-content p {
+		line-height: 30px;
+		margin-bottom: 32px;
+	}
+
+	@media (max-width: 1000px){
+		text-align: center;
+
+		.lst-picture,
+		.lst-content {
+			width: 100%;
+		}
+
+		.lst-picture {
+			margin-bottom: 35px;
+		}
+	}
+}
+
+.lst-consulting-section {
+	.lst-content-section;
+	text-align: center;
+
+	p, .lst-featured { margin-bottom: 32px; }
+	
+	.lst-featured {
+		color: #12708d;
+		font-size: 20px;
+		text-transform: uppercase;
+	}
+
+}
+
+.lst-contact-section {
+	.btn-success,
+	.btn-success:active { 
+		background: #12708d;
+		border: none; 
+	}
+}
+
+.lst-prices-section {
+	.lst-content-section;
+	background: url(../images/halter-white-bg.jpg);
+	text-align: center;
+}
+
+.lst-faq-section {
+	.lst-content-section;
+	text-align: center;
+
+	.lst-accordion-item .lst-title:hover {
+		color: #33bebf;
+		.transition(color .2s);
+	}
+
+	// Removes bottom separator
+	&::after {
+		display: none;
+	}
+}
+
+.lst-social-section {
+	.lst-content-section;
+	background: url(../images/halter-dark-bg.jpg);
+
+	.lst-social-column {
+
+		text-align: center;
+		
+		&:not(:last-child){
+			margin-bottom: 30px;
+		}
+
+		.lst-title {
+			color: #d7df36;
+			font-size: 40px;
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+
+		.lst-hint {
+			color: white;
+			font-size: 18px;
+			font-weight: 300;
+			margin: 15px 0;
+		}
+
+		.lst-input {
+			border: none;
+			color: grey;
+			height: 50px;
+			padding: 15px 25px;
+			margin-bottom: 5px;
+			width: 100%;
+		}
+
+		.lst-send {
+			background: #d7df36;
+			cursor: pointer;
+			display: inline-block;
+			height: 50px;
+			font-weight: bold;
+			padding: 15px;
+			text-align: center;
+			text-decoration: none;
+			width: 100%;
+
+			&.-positive {
+				background: #155A92;
+				color: white;
+			}
+		}
+
+		.lst-thumb {
+			margin: 5px;
+			width: 46%;
+
+			@media (min-width: 768px){
+				width: 29%;
+			}
+		}
+
+		@media (min-width: 768px){
+			display: inline-block;
+			margin-right: 29px;
+			text-align: left;
+			vertical-align: top;
+			width: 45%;
+		}
+	}
+}
+
+.lst-footer-section {
+	background: #33bebf;
+	height: 120px;
+	padding: 35px 0;
+	text-align: center;
+
+	.lst-content-container {
+		padding: 0 20px;
+
+		> .lst-logo {
+			display: inline-block;
+			margin-left: 35px;
+			width: 80px;
+		}
+
+		> .lst-top {
+			background: white;
+			cursor: pointer;
+			float: right;
+			height: 50px;
+			width: 50px;
+			padding: 10px;
+
+			img { width: 25px; }
+		}
+	}
+}
