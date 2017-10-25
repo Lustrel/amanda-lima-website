@@ -220,19 +220,24 @@ angular
 
 		$scope.options = [{
 			url: '#pedro-cellis',
-			label: 'Pedro Cellis'
+			label: 'INÍCIO'
 		}, {
 			url: '#treine-comigo',
-			label: 'Treine Comigo',
+			label: 'TREINE COMIGO',
 		}, {
 			url: '#planos',
-			label: 'Planos'
-		}, {
-			label: 'Contato',
+			label: 'PLANOS'
+		},{
+			url: '#planos',
+			label: 'DÚVIDAS FREQUENTES'
+		},{
+			label: 'CONTATO',
 			callback: $scope.showContactModal
 		}];
 	}
-})();; 
+})();
+
+; 
 'use strict';
 
 (function(){
