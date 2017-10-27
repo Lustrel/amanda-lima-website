@@ -167,24 +167,27 @@
 <section class="lst-social-section" ng-controller="SocialController">
 	<div class="lst-content-container">
 		<div class="lst-social-column">
-			<h4 class="lst-title">Instagram</h4>
+			<h4 class="lst-title">SIGA NO <b><i>INSTAGRAM</i></b></h4>
 			<lst-insta-thumbs></lst-insta-thumbs>
+			<div class="lst-stripe"></div>
 		</div>
 		<div class="lst-social-column">
-			<h4 class="lst-title">Newsletter</h4>
-			<p class="lst-hint">Cadastre-se na nossa newsletter e receba todas as novidades em primeira mão.</p>
-			<input type="email" class="lst-input" placeholder="meu-email@exemplo.com"/>
-			<a ng-show="!alreadySent" class="lst-send" ng-click="sendNewsletter()">Enviar</a>
+			<h4 class="lst-title"><b><i>FALE CONOSCO</b></i></h4>
+			<input type="text" class="lst-input-name" placeholder="SEU NOME"/>
+			<input type="email" class="lst-input-email" placeholder="SEU E-MAIL"/>
+			<input type="text" class="lst-input-msg" placeholder="SUA MENSAGEM..."/>
+			
+			<a ng-show="!alreadySent" class="lst-send" ng-click="sendNewsletter()">ENVIAR</a>
 			<a ng-show="alreadySent" class="lst-send -positive">Cadastrado com sucesso</a>
+
 		</div>
 	</div>
 </section>
 
 <section class="lst-footer-section">
 	<div class="lst-content-container">
+		<h5 class="lst-title-footer">TODOS OS DIREITOS RESERVADOS.2017</h5>
 		<img class="lst-logo" src="dist/images/igor-trindade-logo.png" />
-		<div class="lst-top" lst-scroll scroll-to="#top-menu">
-			<img src="dist/images/to-top.png"/>
 		</div>
 	</div>
 </section>

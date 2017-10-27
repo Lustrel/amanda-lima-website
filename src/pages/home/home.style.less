@@ -15,13 +15,13 @@
 		font-weight: 800;
 				
 		.lst-featured-larger {
-			color: #DF9336;
+			color: #ffb600;
 			font-size: 50px;
 			line-height: 66px;
 		}
 
 		.lst-featured-smaller {
-			color: #DF9336;
+			color: #ffb600;
 			font-size: 42px;
 			line-height: 16px;
 		}
@@ -37,14 +37,14 @@
 
 	.lst-info-box {
 
-		border: 1px solid #BAA878;
+		border: 1px solid #ff9100;
 		color: white;
 		display: inline-block;
 		font-size: 26px;
 		font-weight: 600;
-		height: 100px;
+		height: 80px;
 		margin: 70px 10%;
-		padding: 10% 18%;
+		padding: 6% 18%;
 		vertical-align: top;
 		width: 80%;
 		
@@ -137,20 +137,16 @@
 
 .lst-social-section {
 	.lst-content-section;
-	background: url(../images/halter-dark-bg.jpg);
-
+	background-color: #000000;
+		
 	.lst-social-column {
 
 		text-align: center;
 		
-		&:not(:last-child){
-			margin-bottom: 30px;
-		}
-
 		.lst-title {
-			color: #d7df36;
-			font-size: 40px;
-			font-weight: 700;
+			color: #FFFFFF;
+			font-size: 30px;
+			font-weight: 400;
 			text-transform: uppercase;
 		}
 
@@ -161,17 +157,55 @@
 			margin: 15px 0;
 		}
 
-		.lst-input {
+		.lst-input-name,.lst-input-email  {
 			border: none;
 			color: #FFFFFF;
 			height: 50px;
-			padding: 15px 25px;
+			padding: 15px 15px;
 			margin-bottom: 5px;
+			margin-top: 10px;
 			width: 100%;
 		}
 
+		.lst-input-msg {
+			border: none;
+			color: #FFFFFF;
+			height: 120px;
+			padding: 0 15px 70px;
+			margin-bottom: 10px;
+			margin-top: 10px;
+			width: 100%;
+		}
+
+		::-webkit-input-placeholder {
+			font-style: italic;
+		 }
+		 :-moz-placeholder {
+			font-style: italic;  
+		 }
+		 ::-moz-placeholder {
+			font-style: italic;  
+		 }
+		 :-ms-input-placeholder {  
+			font-style: italic; 
+		 }
+
+		.lst-stripe {
+			background: rgba(255, 255, 255, 0.50);
+			content: '';
+			display: block;
+			height: 1px;
+			left: 50%;
+			margin-top: 35px;
+			margin-bottom: 20px;
+			position: relative;
+			width: 200px;
+	
+			.translate(-50%);
+		}
+
 		.lst-send {
-			background: #d7df36;
+			background: #ffb600;
 			cursor: pointer;
 			display: inline-block;
 			height: 50px;
@@ -182,14 +216,14 @@
 			width: 100%;
 
 			&.-positive {
-				background: #155A92;
+				background: #4B4C4D;
 				color: white;
 			}
 		}
 
 		.lst-thumb {
 			margin: 5px;
-			width: 46%;
+			width: 30%;
 
 			@media (min-width: 768px){
 				width: 29%;
@@ -207,29 +241,25 @@
 }
 
 .lst-footer-section {
-	background: #33bebf;
+	background: #000000;
 	height: 120px;
 	padding: 35px 0;
 	text-align: center;
+
+	.lst-title-footer {
+        font-size: 15px;
+        color: #ffffff;
+		font-style: normal;
+		font-weight: 300;
+    }
 
 	.lst-content-container {
 		padding: 0 20px;
 
 		> .lst-logo {
 			display: inline-block;
-			margin-left: 35px;
 			width: 80px;
 		}
 
-		> .lst-top {
-			background: white;
-			cursor: pointer;
-			float: right;
-			height: 50px;
-			width: 50px;
-			padding: 10px;
-
-			img { width: 25px; }
-		}
 	}
 }
