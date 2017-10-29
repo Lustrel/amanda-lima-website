@@ -1,40 +1,66 @@
 
 .lst-slide-section {
 	.lst-content-section;
-	background: url(../images/pedro-cellis-banner.jpg) no-repeat;
+	background: url(../images/hero-bg.jpg) no-repeat;
 	background-size: cover;
 	background-position: right center;
-	height: 450px;
+	height: 750px;
 	text-transform: uppercase;
 	padding: 70px 30px;
 
 	h2.lst-message {
 		color: white;
-		font-size: 20px;
+		font-size: 26px;
 		font-style: italic;
 		font-weight: 800;
 				
 		.lst-featured-larger {
 			color: #ffb600;
-			font-size: 50px;
+			font-size: 56px;
 			line-height: 66px;
 		}
 
 		.lst-featured-smaller {
 			color: #ffb600;
-			font-size: 42px;
-			line-height: 16px;
+			font-size: 49px;
+			line-height: 30px;
 		}
 
 		.lst-featured-spacing {
+			font-size: 29px;
 			line-height: 46px;
 		}
 
 		.lst-featured-em {
-			font-size: 26px;
+			font-size: 32px;
 		}
 	}
+	
+	@media (max-width: 768px){
 
+		h2.lst-message {
+			font-size: 20px;
+							
+			.lst-featured-larger {
+				font-size: 50px;
+			}
+
+			.lst-featured-smaller {
+				font-size: 42px;
+				line-height: 22px;
+			}
+
+			.lst-featured-spacing {
+				font-size: 29px;
+				line-height: 46px;
+			}
+
+			.lst-featured-em {
+				font-size: 26px;
+			}
+		}
+	}
+	
 	.lst-info-box {
 
 		border: 1px solid #ff9100;
@@ -42,17 +68,28 @@
 		display: inline-block;
 		font-size: 26px;
 		font-weight: 600;
-		height: 80px;
-		margin: 70px 10%;
-		padding: 6% 18%;
-		vertical-align: top;
-		width: 80%;
+		height: 100px;
+		margin: 170px 33%;
+		text-align: center;
+		padding-top: 30px;
+		width: 420px;
+				
+		@media (max-width: 767px) {
+			font-size: 26px;
+			font-weight: 600;
+			height: 80px;
+			margin: 70px 15%;
+			padding-top: 16px;
+			text-align: center;
+			width: 80%;
 		
+		}
+
 	}
 }
 
 .lst-biography-section {
-	background-color:#52504f;
+	background-color:#525254;
 	color: #FFFFFF;
 	
 
@@ -67,7 +104,6 @@
 	}
 
 	.lst-picture {
-		border: 10px solid #bac4ca;
 		max-width: 450px; 
 		margin-right: 30px;
 	}
@@ -77,7 +113,7 @@
 		margin-bottom: 32px;
 	}
 
-	@media (max-width: 1000px){
+	@media (max-width: 768px){
 		text-align: center;
 
 		.lst-picture,
@@ -122,6 +158,9 @@
 .lst-faq-section {
 
 	.lst-content-section;
+		background: url(../images/faq-bg.jpg) no-repeat;
+		background-size: cover;
+		background-position: right center;
 		background-color: #F5B800;
 		padding: 30px;
 		text-align: center;
