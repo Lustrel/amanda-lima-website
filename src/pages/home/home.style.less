@@ -69,19 +69,21 @@
 		font-size: 26px;
 		font-weight: 600;
 		height: 100px;
-		margin: 170px 33%;
+		margin: 170px 0;
+		margin-left: 36%;
 		text-align: center;
 		padding-top: 30px;
 		width: 420px;
+
 				
 		@media (max-width: 767px) {
 			font-size: 26px;
 			font-weight: 600;
 			height: 80px;
-			margin: 70px 15%;
+			margin: 70px 30% 70px 20%;
 			padding-top: 16px;
 			text-align: center;
-			width: 80%;
+			width: 250px;
 		
 		}
 
@@ -91,15 +93,33 @@
 .lst-biography-section {
 	background-color:#525254;
 	color: #FFFFFF;
+
+	h2.lst-message {
+		color: white;
+		font-size: 36px;
+		font-style: italic;
+		font-weight: 600;
+		line-height: 42px;
+		text-align: right;
+				
+		.lst-featured-larger {
+			color: #ffb600;
+			font-size: 48px;
+		}
+
+		.lst-featured {
+			font-size: 48px;
+		}
+	}
 	
-
-	.lst-content-section;
-	text-align: justify;
-
-	.lst-picture,
+	.lst-picture {
+		width: 100%;
+	}
 	.lst-content {
 		display: inline-block;
 		vertical-align: top;
+		margin-top: 80px;
+		margin-right: 20px;
 		width: 45%;
 	}
 
@@ -111,6 +131,38 @@
 	.lst-content p {
 		line-height: 30px;
 		margin-bottom: 32px;
+	}
+
+	.lst-biography-text {
+		font-size: 15px;
+		line-height: 20px;  //'Ajustar
+	}
+
+	.lst-info-box {
+		
+		border: 1px solid #ff9100;
+		color: white;
+		display: inline-block;
+		font-size: 16px;
+		font-weight: 600;
+		height: 50px;
+		margin-left: 55%; //'Ajustar
+		margin-top: 15px;
+		text-align: center;
+		padding-top: 10px;
+		width: 200px;
+								
+		@media (max-width: 767px) {
+			font-size: 26px;
+			font-weight: 600;
+			height: 80px;
+			margin: 70px 30% 70px 20%;
+			padding-top: 16px;
+			text-align: center;
+			width: 250px;
+				
+		}
+		
 	}
 
 	@media (max-width: 768px){
