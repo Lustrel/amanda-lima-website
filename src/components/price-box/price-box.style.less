@@ -1,73 +1,72 @@
 .lst-price-box {
-    background: white;
-    border: 1px solid #DF8C1C;
-    display: inline-block;
-    padding: 20px;
-    vertical-align: top;
-    width: 30%;
+	background: white;
+	border: 1px solid #DF8C1C;
+	display: inline-block;
+	padding: 20px;
+	vertical-align: top;
+	width: 30%;
 
-    &:not(:last-child) {
-        margin-right: 25px;
-    }
+	&:not(:last-child) {
+		margin-right: 25px;
+	}
 
-    &.-featured {
-        margin-top: -25px;
+	&.-featured {
+		.lst-title {
+			font-size: 36px;
+		}
 
-        .lst-title {
-            font-size: 36px;
-        }
+		.lst-buy {
+			background-color: #FFB600;
+			border-color: #FFB600;
+			font-size: 30px;
+			padding: 20px 50px;
+		}
+	}
 
-        .lst-buy {
-            background-color: #FFB600;
-            border-color: #FFB600;
-            font-size: 30px;
-            padding: 20px 50px;
-        }
-    }
+	.lst-title,
+	.lst-price,
+	.lst-description {
+		margin-bottom: 20px;
+	}
 
-    .lst-title,
-    .lst-price,
-    .lst-description {
-        margin-bottom: 20px;
-    }
+	.lst-title {
+		font-size: 24px;
+	}
 
-    .lst-title {
-        font-size: 24px;
-    }
+	.lst-price {
+		color: #ffb600;
+		display: inline-block;
+		font-size: 45px;
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
 
-    .lst-price {
-        color: #ffb600;
-        display: inline-block;
-        font-size: 45px;
-        font-weight: 700;
-        margin-bottom: 10px;
-    }
+	.lst-description {
+		color: #C1C2C2;
+		font-size: 15px;
+	}
 
-    .lst-description {
-        color: #C1C2C2;
-        font-size: 15px;
-    }
+	.lst-buy {
+		background-color: #ffffff;
+		border-color:  #ffE4A3;
+		border-style: solid;
+		color: #525253;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 28px;
+		font-weight: 700;
+		text-align: center;
+		text-decoration: none;
+		padding: 15px 0;
+		width: 100%;
+	}
 
-    .lst-buy {
-        background-color: #ffffff;
-        border-color:  #ffE4A3;
-        border-style: solid;
-        color: #525253;
-        cursor: pointer;
-        display: inline-block;
-        font-size: 28px;
-        font-weight: 700;
-        padding: 20px 60px;
-        text-decoration: none;
+	@media (max-width: 1000px){
+		margin-bottom: 30px;
+		width: 100%;
 
-    }
-
-    @media (max-width: 1000px){
-        margin-bottom: 30px;
-        width: 100%;
-
-        &.-featured {
-            margin-top: 0;            
-        }
-    }
+		&.-featured {
+			margin-top: 0;
+		}
+	}
 }
