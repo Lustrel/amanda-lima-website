@@ -107,6 +107,7 @@
 
 	.lst-picture {
 		width: 100%;
+		max-width: 450px;
 	}
 	.lst-content {
 		display: inline-block;
@@ -126,7 +127,8 @@
 
 	.lst-biography-text {
 		font-size: 15px;
-		line-height: 20px;  //'Ajustar
+		line-height: 20px;
+		margin-left: 30px;  //'Ajustar
 	}
 
 	.lst-info-box {
@@ -151,9 +153,20 @@
 			padding-top: 16px;
 			text-align: center;
 			width: 250px;
-
 		}
 
+	}
+
+	#desktop-version {
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	#mobile-version {
+		@media (min-width: 768px) {
+			display: none;
+		}
 	}
 
 	@media (max-width: 768px){
@@ -297,7 +310,7 @@
 
 		.lst-input-name,.lst-input-email  {
 			border: none;
-			color: #FFFFFF;
+			color: #525253;
 			height: 50px;
 			padding: 15px 15px;
 			margin-bottom: 5px;
@@ -307,7 +320,7 @@
 
 		.lst-input-msg {
 			border: none;
-			color: #FFFFFF;
+			color: #525253;
 			height: 120px;
 			padding: 0 15px 70px;
 			margin-bottom: 10px;
