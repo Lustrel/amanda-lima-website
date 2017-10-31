@@ -92,7 +92,8 @@ angular
 			}
 		};
 	}
-})();; 
+})();
+; 
 "use strict";
 
 (function() {
