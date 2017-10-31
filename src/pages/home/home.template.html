@@ -137,7 +137,7 @@
 
 <section id="planos" class="lst-prices-section">
 	<h2 class="lst-title-gray">PLANOS</h2>
-	<div class="lst-content-container">
+	<div class="lst-content-featured">
 		<lst-price-box
 			title="PLANO MENSAL"
 			price="110,00"
@@ -236,8 +236,13 @@
 		<div class="lst-social-column">
 			<h4 class="lst-title">SIGA NO <b><i>INSTAGRAM</i></b></h4>
 			<lst-insta-thumbs></lst-insta-thumbs>
-			<div class="lst-stripe"></div>
+			<div class="lst-stripe-horizontal"></div>
 		</div>
+
+		<div class="lst-social-column">
+			<div class="lst-stripe-vertical"></div>
+		</div>
+
 		<div class="lst-social-column">
 			<h4 class="lst-title"><b><i>FALE CONOSCO</b></i></h4>
 			<input type="text" class="lst-input-name" placeholder="SEU NOME"/>
@@ -246,7 +251,6 @@
 
 			<a ng-show="!alreadySent" class="lst-send" ng-click="sendNewsletter()">ENVIAR</a>
 			<a ng-show="alreadySent" class="lst-send -positive">Cadastrado com sucesso</a>
-
 		</div>
 	</div>
 </section>
