@@ -19,7 +19,7 @@
 		};
 
 		$scope.options = [{
-			url: '#pedro-cellis',
+			url: '#amanda-lima',
 			label: 'INÍCIO'
 		}, {
 			url: '#treine-comigo',
@@ -28,11 +28,11 @@
 			url: '#planos',
 			label: 'PLANOS'
 		},{
-			url: '#planos',
+			url: '#duvidas',
 			label: 'DÚVIDAS FREQUENTES'
 		},{
-			label: 'CONTATO',
-			callback: $scope.showContactModal
+			url: '#fale-conosco',
+			label: 'FALE CONOSCO'
 		}];
 	}
 })();
