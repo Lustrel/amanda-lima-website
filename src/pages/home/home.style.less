@@ -201,7 +201,7 @@
 .lst-consulting-section {
 	background: url(../images/step-by-step-bg.png) no-repeat;
 	color: #4A4F4F;
-	
+
 	@media (max-width: 768px) {
 		display: none;
 	}
@@ -232,12 +232,12 @@
 			-ms-transform: rotate(-5deg);
 			-webkit-transform: rotate(-5deg);
 			padding-top: 300px;
-			padding-right: 20px;			
+			padding-right: 20px;
 			transform: rotate(-5deg);
 
 			.lst-featured-text {
 				color: #FFCC00;
-				font-size: 52px;				
+				font-size: 52px;
 				text-shadow:#4a4f4f -6px 2px 0,
 							#4a4f4f 1.75517px 0.958851px 0,
 							#4a4f4f 1.0806px 1.68294px 0,
@@ -307,9 +307,19 @@
 }
 
 .lst-prices-section {
-	padding: 40px;
 	.lst-content-section;
+	padding: 40px;
 	text-align: center;
+
+	.lst-content-container {
+		max-width: 1200px;
+	}
+
+	@media (min-width: 1200px) {
+		.lst-price-box .lst-description {
+			min-height: 180px;
+		}
+	}
 }
 
 .lst-faq-section {
@@ -334,11 +344,11 @@
 
 	.lst-social-column:nth-child(2) {
 		width: 5%;
-		
+
 		@media (max-width: 768px) {
 				display: none;
 		}
-						
+
 	}
 	.lst-social-column {
 		text-align: center;
@@ -390,7 +400,7 @@
 			font-style: italic;
 		 }
 
-		
+
 		.lst-stripe-horizontal {
 			background: rgba(255, 255, 255, 0.50);
 			content: '';
