@@ -1,38 +1,38 @@
-<header id="top-menu" class="lst-top-menu" ng-controller="HeaderController as controller">
-	<div class="lst-content-container">
-		<img class="lst-logo" src="./dist/images/amanda-lima-logo.png" />
-		<ul class="lst-items">
-			<li class="lst-item" ng-repeat="option in options">
-				<a ng-if="option.url" lst-scroll scroll-to="{{option.url}}" ng-bind="option.label"></a>
-				<a ng-if="option.callback" ng-bind="option.label" ng-click="option.callback()"></a>
-			</li>
-		</ul>
+<div class="lst-main-image">
+	<header id="top-menu" class="lst-top-menu" ng-controller="HeaderController as controller">
+		<div class="lst-content-container">
+			<img class="lst-logo" src="./dist/images/amanda-lima-logo.png" />
+			<ul class="lst-items">
+				<li class="lst-item" ng-repeat="option in options">
+					<a ng-if="option.url" lst-scroll scroll-to="{{option.url}}" ng-bind="option.label"></a>
+					<a ng-if="option.callback" ng-bind="option.label" ng-click="option.callback()"></a>
+				</li>
+			</ul>
+			<lst-menu-button options="options"></lst-menu-button>
+		</div>
+	</header>
+	
+	<section class="lst-slide-section">
+		<div class="lst-content-container">
+			<h2 class="lst-message">
+				<span>TRANSFORMANDO</span> <br/>
+				<span class="lst-featured-larger">SONHOS</span> <span class="lst-featured-em">&nbsp;&nbsp;EM</span><br/>
+				<span class="lst-featured-smaller">RESULTADOS</span><br/>
+				<span class="lst-featured-spacing">ALCANÇÁVEIS!</span>
+			</h2>
+		</div>
 
-		<lst-menu-button options="options"></lst-menu-button>
-	</div>
-</header>
-
-<section class="lst-slide-section">
-	<div class="lst-content-container">
-		<h2 class="lst-message">
-			<span>TRANSFORMANDO</span> <br/>
-			<span class="lst-featured-larger">SONHOS</span> <span class="lst-featured-em">&nbsp;&nbsp;EM</span><br/>
-			<span class="lst-featured-smaller">RESULTADOS</span><br/>
-			<span class="lst-featured-spacing">ALCANÇÁVEIS!</span>
-		</h2>
-	</div>
-
-	<div class="lst-call-action">
-		<div class="lst-button" lst-scroll scroll-to="#consultoria">COMEÇAR</div>
-	</div>
-</section>
+		<div class="lst-call-action">
+			<div class="lst-button" lst-scroll scroll-to="#consultoria">COMEÇAR</div>
+		</div>
+	</section>
+</div>
 
 <section id="amanda-lima" class="lst-biography-section">
-	<div class="lst-content-container">
+	<div class="lst-content-container lst-picture-desktop">
 		<div class="lst-content">
 			<div id="mobile-version">
-				<img class="lst-picture" src="src/images/amanda-perfil.png"/>
-
+				<div class="lst-picture"></div>
 				<p class="lst-biography-text">
 					Graduada em Educação Física Bacharelado pelo Centro Universitário
 					Izabela Hendrix, nascida em Belo Horizonte MG, buscou explorar novos
@@ -61,8 +61,7 @@
 			</p>
 		</div>
 		<div id="desktop-version" class="lst-content">
-			<img class="lst-picture" src="src/images/amanda-perfil.png"/>
-
+			<div class="lst-picture"></div>
 			<p class="lst-biography-text">
 				Graduada em Educação Física Bacharelado pelo Centro Universitário
 				Izabela Hendrix, nascida em Belo Horizonte MG, buscou explorar novos
@@ -226,7 +225,7 @@
 
 <section class="lst-social-section" ng-controller="SocialController">
 	<div class="lst-content-container">
-		<div class="lst-social-column">
+		<div class="lst-social-column lst-follow-instagram">
 			<h4 class="lst-title">SIGA NO <b></br>
 			<i>INSTAGRAM</i></b></h4>
 			<lst-insta-thumbs></lst-insta-thumbs>
@@ -237,7 +236,7 @@
 			<div class="lst-stripe-vertical"></div>
 		</div>
 
-		<div id="fale-conosco" class="lst-social-column">
+		<div id="fale-conosco" class="lst-social-column lst-contact-us">
 			<h4 class="lst-title"><b><i>FALE CONOSCO</b></i></h4>
 			<input type="text" class="lst-input-name" placeholder="SEU NOME"/>
 			<input type="email" class="lst-input-email" placeholder="SEU E-MAIL"/>

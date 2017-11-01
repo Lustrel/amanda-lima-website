@@ -1,11 +1,16 @@
-
-.lst-slide-section {
-	.lst-content-section;
+.lst-main-image {
 	background: url(../images/hero-bg.jpg) no-repeat;
 	background-size: cover;
 	background-position: center bottom;
-	height: 750px;
-	max-height: ~"calc(100vh - 90px)";
+	height: 1050px;
+	max-height: ~"calc(100vh + 100px)";
+	text-align: center;
+	text-transform: uppercase;
+}
+
+
+.lst-slide-section {
+	.lst-content-section;
 	text-align: center;
 	text-transform: uppercase;
 	padding: 70px 30px;
@@ -90,16 +95,17 @@
 .lst-biography-section {
 	background-color:#525254;
 	color: #FFFFFF;
-	padding: 0 20px;
 
 	p {
 		font-weight: 300;
+		padding: 0 30px;
 	}
 
 	h2.lst-title{
 		font-size: 32px;
 		font-style: italic;
 		font-weight: 700;
+		padding: 0 30px;
 	}
 
 	h2.lst-message {
@@ -109,6 +115,7 @@
 		font-weight: 600;
 		line-height: 42px;
 		text-align: right;
+		padding: 0 20px;
 
 		.lst-featured-larger {
 			color: #ffb600;
@@ -119,12 +126,18 @@
 			font-size: 48px;
 		}
 	}
-
+	
 	.lst-picture {
-		width: 100%;
-		max-width: 450px;
-		margin-left: 10%;
+		background: url(../images/amanda-perfil.png) no-repeat;
+		background-size: cover;
+		background-position: 35% 75%;
+		height: 400px;
+		max-height: ~"calc(100vh + 100px)";
+		padding-top: 30px;
+		text-align: center;
+		text-transform: uppercase;
 	}
+
 	.lst-content {
 		display: inline-block;
 		vertical-align: top;
@@ -132,14 +145,13 @@
 		width: 45%;
 	}
 
-	.lst-picture {
-		max-width: 450px;
-	}
-
 	.lst-biography-text {
-		font-size: 12px;
+		color: rgba(245, 245, 245, 0.93);
+		font-size: 11px;
+		font-style: italic;
 		line-height: 14px;
-		padding-left: 30px;
+		padding-left: 60px;
+
 	}
 
 	.lst-content {
@@ -174,18 +186,18 @@
 	}
 
 	#desktop-version {
-		@media (max-width: 768px) {
+		@media (max-width: 769px) {
 			display: none;
 		}
 	}
 
 	#mobile-version {
-		@media (min-width: 768px) {
+		@media (min-width: 769px) {
 			display: none;
 		}
 	}
 
-	@media (max-width: 768px){
+	@media (max-width: 769px){
 		text-align: center;
 
 		.lst-picture,
@@ -193,9 +205,6 @@
 			width: 100%;
 		}
 
-		.lst-picture {
-			margin-bottom: 35px;
-		}
 	}
 }
 
@@ -346,19 +355,25 @@
 	.lst-social-column:nth-child(2) {
 		width: 5%;
 
-		@media (max-width: 768px) {
+		@media (max-width: 769px) {
 				display: none;
 		}
 
 	}
 	.lst-social-column {
 		text-align: center;
+		max-width: 700px;
 
 		.lst-title {
 			color: #FFFFFF;
-			font-size: 30px;
+			font-size: 36px;
+			font-style: italic;
 			font-weight: 400;
 			text-transform: uppercase;
+		}
+
+		b {
+			font-weight: 600;
 		}
 
 		.lst-hint {
@@ -415,7 +430,7 @@
 
 			.translate(-50%);
 
-			@media (min-width: 768px) {
+			@media (min-width: 769px) {
 				display: none;
 			}
 		}
@@ -456,18 +471,37 @@
 			margin: 5px;
 			width: 30%;
 
-			@media (min-width: 768px){
+			@media (min-width: 769px){
 				width: 29%;
 			}
 		}
 
-		@media (min-width: 768px){
+		@media (min-width: 769px){
 			display: inline-block;
 			text-align: left;
 			vertical-align: top;
 			width: 45%;
 		}
 	}
+}
+
+.lst-contact-us {
+
+	@media (min-width: 769px){
+		padding-left: 110px;
+		max-width: 700px;
+	}
+	
+}
+
+.lst-follow-instagram {
+	
+	@media (min-width: 769px){
+		padding-right: 90px;
+		max-width: 700px;
+	}
+
+	
 }
 
 .lst-footer-section {
