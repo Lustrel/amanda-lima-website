@@ -111,31 +111,25 @@ angular
 				options: "="
 			},
 			link: function($scope, theElement, attrs){
-				//var menu = attrs.menu;
 				var $overlay = $(".lst-menu-button__overlay");
-				//var $items = $(menu).clone();
-
-				/*
-				addContentToOverlay();
-
-				function addContentToOverlay(){
-					$overlay.append($items);
-				}
-				*/
+				var $body = $('body');
 
 				$scope.openMenu = function(){
 					console.log("Opening menu");
 					$overlay.css({ display: 'block' });
+					$body.css({ overflow: 'hidden' });
 				};
 
 				$scope.closeMenu = function(){
 					console.log("Closing menu");
 					$overlay.css({ display: 'none' });
+					$body.css({ overflow: 'initial' });
 				};
 			}
 		};
 	}
-})();; 
+})();
+; 
 "use strict";
 
 (function() {
