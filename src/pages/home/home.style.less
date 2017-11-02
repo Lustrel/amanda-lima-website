@@ -8,7 +8,6 @@
 	text-transform: uppercase;
 }
 
-
 .lst-slide-section {
 	.lst-content-section;
 	text-align: center;
@@ -130,7 +129,7 @@
 	.lst-picture {
 		background: url(../images/amanda-perfil.png) no-repeat;
 		background-size: cover;
-		background-position: 35% 75%;
+		background-position: 30% 75%;
 		height: 400px;
 		max-height: ~"calc(100vh + 100px)";
 		padding-top: 30px;
@@ -151,6 +150,7 @@
 		font-style: italic;
 		line-height: 14px;
 		padding-left: 60px;
+
 
 	}
 
@@ -351,6 +351,7 @@
 .lst-social-section {
 	.lst-content-section;
 	background-color: #000000;
+	padding: 30px 30px 5px;
 
 	.lst-social-column:nth-child(2) {
 		width: 5%;
@@ -506,25 +507,44 @@
 
 .lst-footer-section {
 	background: #000000;
-	height: 120px;
+	height: 60px;
+	padding: 1px 0;
 	text-align: center;
 
 	.lst-title-footer {
-		float: left;
-        font-size: 15px;
+
+		font-size: 15px;
         color: #ffffff;
 		font-style: normal;
 		font-weight: 300;
+
+		@media (min-width: 769px) {
+			float: left;
+		}
     }
 
-	.lst-content-footer {
+	.lst-content-container {
 		padding: 0 20px;
 
 		> .lst-logo {
-			float: right;
 			display: inline-block;
-			width: 80px;
+			width: 100px;
 		}
 
 	}
 }
+
+.lst-content-footer {
+	padding: 0 20px;
+
+	> .lst-logo {
+		display: inline-block;
+		width: 80px;
+
+		@media (min-width: 769px) {
+			float: right;
+		}
+	}
+
+}
+
