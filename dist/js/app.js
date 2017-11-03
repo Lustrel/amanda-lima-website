@@ -193,14 +193,54 @@ angular
 		};
 	}
 })();; 
-var photoSlider = angular.module('website', ['ngAnimate', 'ngTouch'])
-photoSlider.controller('PhotoSliderCtrl', function ($scope) {
+'use strict';
+
+(function(){
+	angular
+		.module('Website')
+		.controller('HeaderController', ['$scope', 'ModalService', Controller]);
+
+	function Controller($scope, ModalService){
+		$scope.showContactModal = function(){
+			ModalService
+				.showModal({ 
+					templateUrl: 'dist/templates/pages/home/contact/contact.modal.template.html',
+					controller:  'ContactModalController' 
+				})
+				.then(function(modal){
+					console.log(modal);
+					modal.element.modal();
+				});
+		};
+
+		$scope.options = [{
+			url: '#amanda-lima',
+			label: 'INÍCIO'
+		}, {
+			url: '#treine-comigo',
+			label: 'TREINE COMIGO',
+		}, {
+			url: '#planos',
+			label: 'PLANOS'
+		},{
+			url: '#duvidas',
+			label: 'DÚVIDAS FREQUENTES'
+		},{
+			url: '#fale-conosco',
+			label: 'FALE CONOSCO'
+		}];
+	}
+})();
+
+; 
+angular.module('website', ['ngAnimate', 'ngTouch']) // Erro no Controller e alterando o nome do módulo p/ Website, conflito no módulo
+.controller('MainCtrl', function ($scope) {
     $scope.slides = [
-        {image: '../images/img00.jpg', description: 'Image 00'},
-        {image: '../images/img01.jpg', description: 'Image 01'},
-        {image: '../images/img02.jpg', description: 'Image 02'},
-        {image: '../images/img03.jpg', description: 'Image 03'},
-        {image: '../images/img04.jpg', description: 'Image 04'}
+        {image: 'images/img00.jpg', description: 'Image 00'},
+        {image: 'images/img01.jpg', description: 'Image 01'},
+        {image: 'images/img02.jpg', description: 'Image 02'},
+        {image: 'images/img03.jpg', description: 'Image 03'},
+        {image: 'images/img04.jpg', description: 'Image 04'}
     ];
 
     $scope.direction = 'left';
@@ -259,46 +299,7 @@ photoSlider.controller('PhotoSliderCtrl', function ($scope) {
             }
         }
     };
-});; 
-'use strict';
-
-(function(){
-	angular
-		.module('Website')
-		.controller('HeaderController', ['$scope', 'ModalService', Controller]);
-
-	function Controller($scope, ModalService){
-		$scope.showContactModal = function(){
-			ModalService
-				.showModal({ 
-					templateUrl: 'dist/templates/pages/home/contact/contact.modal.template.html',
-					controller:  'ContactModalController' 
-				})
-				.then(function(modal){
-					console.log(modal);
-					modal.element.modal();
-				});
-		};
-
-		$scope.options = [{
-			url: '#amanda-lima',
-			label: 'INÍCIO'
-		}, {
-			url: '#treine-comigo',
-			label: 'TREINE COMIGO',
-		}, {
-			url: '#planos',
-			label: 'PLANOS'
-		},{
-			url: '#duvidas',
-			label: 'DÚVIDAS FREQUENTES'
-		},{
-			url: '#fale-conosco',
-			label: 'FALE CONOSCO'
-		}];
-	}
-})();
-
+});
 ; 
 'use strict';
 

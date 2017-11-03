@@ -1,11 +1,11 @@
-angular.module('website', ['ngAnimate', 'ngTouch', Controller])
-    .controller('PhotoSliderCtrl', function ($scope) {
+angular.module('website', ['ngAnimate', 'ngTouch']) // Erro no Controller e alterando o nome do módulo p/ Website, conflito no módulo
+.controller('MainCtrl', function ($scope) {
     $scope.slides = [
-        {image: '../images/img00.jpg', description: 'Image 00'},
-        {image: '../images/img01.jpg', description: 'Image 01'},
-        {image: '../images/img02.jpg', description: 'Image 02'},
-        {image: '../images/img03.jpg', description: 'Image 03'},
-        {image: '../images/img04.jpg', description: 'Image 04'}
+        {image: 'images/img00.jpg', description: 'Image 00'},
+        {image: 'images/img01.jpg', description: 'Image 01'},
+        {image: 'images/img02.jpg', description: 'Image 02'},
+        {image: 'images/img03.jpg', description: 'Image 03'},
+        {image: 'images/img04.jpg', description: 'Image 04'}
     ];
 
     $scope.direction = 'left';
