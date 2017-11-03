@@ -2,9 +2,13 @@
 	background: rgba(0, 0, 0, 0.6);
 	border-bottom: 4px solid #AF6A31;
 	height: 130px;
-	padding: 32px 25px;
+	padding: 32px 30px;
 
-	.lst-logo { display: inline-block; height: 60px; margin-left: -70px; }
+	@media (min-width: 768px) {
+		padding: 32px 70px;
+	}
+
+	.lst-logo { display: inline-block; height: 60px; float: left; }
 
 	.lst-menu-button {
 		@media (min-width: 855px){
