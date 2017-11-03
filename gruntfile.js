@@ -19,6 +19,8 @@ module.exports = function(Grunt)
                     (bowerPath + "/bootstrap/dist/js/bootstrap.min.js"),
                     (bowerPath + "/angular/angular.min.js"),
                     (bowerPath + "/angular-route/angular-route.min.js"),
+                    (bowerPath + "/angular-animate/angular-animate.min.js"),
+                    (bowerPath + "/tweenmax/TweenMax.min.js"),
                     (bowerPath + "/instafeed.js/instafeed.min.js"),
                     (bowerPath + "/angular-modal-service/dst/angular-modal-service.min.js")
                 ],
