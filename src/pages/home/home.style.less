@@ -15,11 +15,12 @@
 		top: 50%;
 		width: 30px;
 		height: 30px;
-		z-index: 9999;
+		z-index: 1000;
 		color: white;
 		font-size: 20px;
 		cursor: pointer;
 
+		
 		&.-previous {
 			left: 0;
 		}
@@ -373,16 +374,12 @@
 .lst-social-section {
 	.lst-content-section;
 	background-color: #000000;
-	padding: 30px 30px 5px;
+	padding: 30px 30px 5px !important;
 
 	.lst-social-column:nth-child(2) {
 		width: 5%;
-
-		@media (max-width: 769px) {
-				display: none;
-		}
-
 	}
+
 	.lst-social-column {
 		text-align: center;
 		max-width: 700px;
@@ -470,6 +467,10 @@
 			width: 1px;
 
 			.translate(-50%);
+
+			@media (max-width: 769px) {
+				display: none;
+			}
 		}
 
 		.lst-send {
