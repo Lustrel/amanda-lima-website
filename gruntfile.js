@@ -20,7 +20,8 @@ module.exports = function(Grunt)
                     (bowerPath + "/angular/angular.min.js"),
                     (bowerPath + "/angular-route/angular-route.min.js"),
                     (bowerPath + "/instafeed.js/instafeed.min.js"),
-                    (bowerPath + "/angular-modal-service/dst/angular-modal-service.min.js")
+                    (bowerPath + "/angular-modal-service/dst/angular-modal-service.min.js"),
+                    (bowerPath + "/angular-carousel/dist/angular-carousel.min.js")
                 ],
                 dest: (distJsPath + "/vendor.js")
             },
@@ -57,7 +58,8 @@ module.exports = function(Grunt)
                 src: [ 
                     (bowerPath + "/reset-css/reset.css"),
                     (bowerPath + "/components-font-awesome/css/font-awesome.min.css"),
-                    (bowerPath + "/bootstrap/dist/css/bootstrap.min.css")
+                    (bowerPath + "/bootstrap/dist/css/bootstrap.min.css"),
+                    (bowerPath + "/angular-carousel/dist/angular-carousel.css")
                 ],
                 dest: (distCssPath + "/vendor.css")
             }

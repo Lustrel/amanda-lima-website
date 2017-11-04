@@ -6,6 +6,28 @@
 	max-height: ~"calc(100vh + 100px)";
 	text-align: center;
 	text-transform: uppercase;
+
+	.transition(background 0.5s);
+
+	.lst-slide-button {
+		background: orangered;
+		position: absolute;
+		top: 50%;
+		width: 30px;
+		height: 30px;
+		z-index: 9999;
+		color: white;
+		font-size: 20px;
+		cursor: pointer;
+
+		&.-previous {
+			left: 0;
+		}
+
+		&.-next {
+			right: 0;
+		}
+	}
 }
 
 .lst-slide-section {

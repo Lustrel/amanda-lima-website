@@ -1,5 +1,8 @@
-<div class="lst-main-image">
-	<header id="top-menu" class="lst-top-menu" ng-controller="HeaderController as controller">
+<div id="slide" class="lst-main-image" ng-controller="HeaderController as controller">
+	<div class="lst-slide-button -previous" ng-click="controller.previousImage()"> < </div>
+	<div class="lst-slide-button -next" ng-click="controller.nextImage()"> > </div>
+
+	<header id="top-menu" class="lst-top-menu">
 		<div class="lst-content-container">
 			<img class="lst-logo" src="./dist/images/amanda-lima-logo.png" />
 			<ul class="lst-items">

@@ -23,6 +23,7 @@
     "jquery": "^3.1.1",
     "bootstrap": "^3.3.7",
     "instafeed.js": "^1.4.1",
-    "angular-modal-service": "^0.12.1"
+    "angular-modal-service": "^0.12.1",
+    "angular-carousel": "^1.1.0"
   }
 }

@@ -6,6 +6,13 @@
 		.controller('HeaderController', ['$scope', 'ModalService', Controller]);
 
 	function Controller($scope, ModalService){
+		var $slide = $("#slide");
+		var slideBackgrounds = [
+			'dist/images/hero-bg.png',
+			'dist/images/teste.jpg',
+		];
+		var slideIndex = 0;
+
 		$scope.showContactModal = function(){
 			ModalService
 				.showModal({ 
@@ -34,6 +41,32 @@
 			url: '#fale-conosco',
 			label: 'FALE CONOSCO'
 		}];
+
+		function getNextIndex() {
+			slideIndex++;
+			if(slideIndex === slideBackgrounds.length){
+				slideIndex = 0;
+			}
+			return slideIndex;
+		}
+
+		function getPreviousIndex() {
+			slideIndex--;
+			if(slideIndex === -1){
+				slideIndex = slideBackgrounds.length - 1;
+			}
+			return slideIndex;
+		}
+
+		this.nextImage = function(){
+			var finalBackgroundProp = 'url(' + slideBackgrounds[getNextIndex()] + ')';
+			$slide.css('background-image', finalBackgroundProp);
+		}
+
+		this.previousImage = function(){
+			var finalBackgroundProp = 'url(' + slideBackgrounds[getPreviousIndex()] + ')';
+			$slide.css('background-image', finalBackgroundProp);
+		}
 	}
 })();
 
