@@ -30,7 +30,7 @@ module.exports = function(Grunt)
             app: {
                 src: [ 
                     (sourcePath + "/app.module.js"),
-                    (sourcePath + "/plugins/**/*.directive.js"),
+                    (sourcePath + "/plugins/**/*.js"),
                     (sourcePath + "/components/**/*.module.js"),
                     (sourcePath + "/components/**/*.directive.js"),
                     (sourcePath + "/components/**/*.provider.js"),
