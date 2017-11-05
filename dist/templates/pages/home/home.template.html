@@ -252,8 +252,7 @@
 			<input type="email" class="lst-input-email" placeholder="SEU E-MAIL"/>
 			<input type="text" class="lst-input-msg" placeholder="SUA MENSAGEM..."/>
 
-			<a ng-show="!alreadySent" class="lst-send" ng-click="sendNewsletter()">ENVIAR</a>
-			<a ng-show="alreadySent" class="lst-send -positive">Cadastrado com sucesso</a>
+			<a ng-show="!alreadySent" class="lst-send" ng-class="{'-positive': mailSuccess}" ng-click="sendEmail()" ng-bind="sendText"></a>
 		</div>
 	</div>
 </section>

@@ -6,12 +6,28 @@
 		.controller('SocialController', ['$scope', '$http', Controller]);
 
 	function Controller($scope, $http){
-		$scope.sendNewsletter = function(){
+		$scope.sendText = 'ENVIAR';
+		$scope.name = '';
+		$scope.email = '';
+		$scope.message = '';
+		$scope.mailSuccess = false;
+
+		$scope.sendEmail = function(){
+			var data = {
+				name: $scope.name,
+				email: $scope.email,
+				message: $scope.message,
+			}
+
 			$http
-				.post('/php/newsletter.php', { email: $scope.email })
-				.then(function(res){
-					$scope.alreadySent = true;
+				.post('./php/contact.php', data)
+				.then(function(){
+					$scope.sendText = 'ENVIADO';
+					$scope.mailSuccess = true;
+				}, function(){
+					// temporally
+					$scope.mailSuccess = true;
 				});
-		};
+		}
 	}
 })();
