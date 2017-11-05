@@ -12,11 +12,12 @@
 			link: function($scope, theElement){               
                 function resizeHeights(){
                     var biggestHeight = 0;
-                    var childrenSelector = ".lst-price-box:not(.-featured)";
-                    var featuredSelector = ".lst-price-box.-featured";
+                    var childrenSelector = ".lst-price-box2:not(.-featured)";
+                    var featuredSelector = ".lst-price-box2.-featured";
 
                     $(childrenSelector).each(function(){
-                        var height = $(this).outerHeight();
+                        var height = $(this).originalHeight || $(this).outerHeight();
+                        $(this).originalHeight = height;
                         if (biggestHeight < height) 
                             biggestHeight = height;
                     });
