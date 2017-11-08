@@ -7,7 +7,7 @@
 $name = $_GET['name'];
 $email = $_GET['email'];
 $message = $_GET['message'];
-$to = 'stanleysathlerpinto@gmail.com';
+$to = 'contato@ptamanda.com.br';
 
 $finalMessage = "
 	Nome: $name
