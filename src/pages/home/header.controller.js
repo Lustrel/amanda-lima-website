@@ -9,7 +9,7 @@
 		var $slide = $("#slide");
 		var slideBackgrounds = [
 			'dist/images/hero-bg.png',
-			'dist/images/teste.jpg',
+			'dist/images/hero-bg-2.png',
 		];
 		var slideIndex = 0;
 

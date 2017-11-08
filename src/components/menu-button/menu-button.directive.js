@@ -42,7 +42,7 @@
 
 				$scope.closeMenu = function(){
 					hideOverlay();
-					window.removeEventListener('resize');
+					window.removeEventListener('resize', showOverlay);
 				};
 			}
 		};
